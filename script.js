@@ -353,6 +353,61 @@ function manejarFormulario(event) {
     cargarPeliculas();
 }
 
+
+// ============================== VALIDACIÓN DE FORMULARIO ==============================
+
+const form = document.getElementById ("peli-form")
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+
+    // Acceso a los "id" de los campos del formulario
+    const name = document.getElementById("name").value;
+    const year = document.getElementById("year").value;
+    const description = document.getElementById("short-text").value;
+    const url = document.getElementById("url").value;
+    const gender = document.getElementById("gender").value;
+
+    // Validación de nombre:
+    const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9\s\-\:\,\.\!\?\(\)\"\']+$/;
+    if (!nameRegex.test(name)) {
+        alert("Por favor, introduce un nombre válido");
+        return;
+    }
+    // Validación de año:
+    const yearRegex = /^(1[8-9][0-9]{2}|20[0-1][0-9]|202[0-5])$/ ;
+    if (!yearRegex.test(year)) {
+        alert("Por favor, introduce un año válido");
+        return;
+    }
+
+    // Validación de descripción:
+    const descriptionRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9\s\-\:\,\.\!\?\(\)]{1,300}$/ ;
+    if (!descriptionRegex.test(description)) {
+        alert("Por favor, introduce un año válido");
+        return;
+    }
+
+    // Validación de url:
+    const urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+    if (!urlRegex.test(url)) {
+        alert("Por favor, introduce un año válido");
+        return;
+    }
+
+    // Validación de gender:
+    const genderRegex = /^(Terror|Acción|Comedia|Romántica)$/i;
+    if (!genderRegex.test(gender)) {
+        alert("Por favor, introduce un año válido");
+        return;
+    }
+
+    // Si pasas todas las validaciones se procesa el formulario
+    alert("Formulario enviado correctamente");
+
+})
+
+
 // ============================== EDITAR UNA PELÍCULA ==============================
 
 // Función para editar películas existentes que recibe la posición de la película a editar

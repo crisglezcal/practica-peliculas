@@ -1,0 +1,144 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&display=swap');
+
+/* VARIABLES */
+
+:root {
+    --raisin-black: #2d2a32ff;
+    --maize: #eae151ff;
+    --vanilla: #eeefa8ff;
+    --baby-powder: #fafdf6ff;
+    --font-black: 900;
+    --font-regular: 400;
+    --font-italic: 300;
+}
+
+
+/* BODY, HEADER Y FOOTER */
+
+body {
+    background-color: var(--maize);
+    font-family: "Lato", sans-serif;
+    color: var (--raisin-black);
+    font-size: 15px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 999;
+}
+
+/* h1, h2 y h3 */
+
+h1, h2, h3 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: var(--font-black);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+/* ID */
+
+#filtro-container1 {
+    text-align: center;
+}
+
+#buscar-pelicula {
+    background-color: var(--baby-powder); 
+    border-radius: 10px; 
+    border: 1.5px solid var(--raisin-black);
+    padding: 15px;
+    font-size: 15px;
+    width: 300px;
+    margin-top: 10px;
+    font-family: 'BBH Sans Bogle', sans-serif;
+}
+
+#buscar-pelicula::placeholder {
+    font-style: italic;
+    font-weight: 300;
+    color: #666;
+}
+
+#buscar-pelicula:focus {
+    outline: none;
+    border-color: var(--maize);
+}
+
+#filtro-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+}
+
+#filtro-container2 h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#filtro-genero {
+    background-color: var(--baby-powder);
+    border: 1.5px solid var(--raisin-black);
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 15px;
+    width: 350px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#filtro-genero:focus {
+    outline: none;
+    border-color: var(--maize);
+}
+
+#filtro-container2 button {
+    background-color: var(--raisin-black);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 350px;
+}
+
+#filtro-container2 button:hover {
+    background-color: var(--baby-powder);
+    color: var(--raisin-black);
+    transform: translateY(-2px);
+}
+
+#filtro-container2 button:active {
+    transform: translateY(0);
+}
+
+#pelis-tabla {
+
+}
+
+#formulario {
+
+}
+
+/* AÑADIR A TODO MEDIAQUERIES Y QUE SEA MOBILE FIRST */
