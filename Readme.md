@@ -15,3 +15,4 @@
 1. Añade otro filtro: input de texto + onchange. El usuario va escribiendo nombre de película y se renderizan las películas que coinciden
 2. Editar una película en concreto
 3. Borrar una película en concreto# practica-peliculas
+# practica-peliculas

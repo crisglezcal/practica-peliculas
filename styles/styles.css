@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&display=swap');
 
 /* VARIABLES */
-
 :root {
     --raisin-black: #2d2a32ff;
     --maize: #eae151ff;
@@ -13,8 +12,12 @@
     --font-italic: 300;
 }
 
-
-/* BODY Y HEADER */
+/* HTML completo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-image: url("../assets/palomitas2.jpg");
@@ -23,50 +26,55 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: "Lato", sans-serif;
-    color: var (--raisin-black);
-    font-size: 15px;
-    padding: 30px 30px;
-    margin: 30px 30px;
+    color: var(--raisin-black);
+    font-size: 14px;
+    padding: 12px;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
+/* HEADER Y ELEMENTOS SUPERIORES */
 header {
-    top: 0;
-    left: 0;
-    padding: 12px 20px;
-    box-sizing: border-box;
+    padding: 8px 0;
     width: 100%;
-    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-/* h1 */
 
 h1 {
     text-align: center;
     text-shadow: 1px 1px 1px var(--raisin-black);
-    font-family: var(--font-black);
+    font-weight: var(--font-black);
     background-color: var(--maize);
-    border-radius: 15px;
-    padding: 10px 10px;
-    font-size: 60px;
-    margin: 10px auto;
+    border-radius: 8px;
+    padding: 12px 8px;
+    font-size: 1.5rem; /* Usando rem para mejor escalado */
+    margin: 8px auto;
+    width: 100%;
+    max-width: 400px;
 }
 
-/* ID */
-
-/* Filtro de búsqueda de película por nombre */
-
+/* FILTROS - CENTRADOS EN MÓVIL */
 #filtro-container1 {
     text-align: center;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #buscar-pelicula {
     background-color: var(--baby-powder); 
-    border-radius: 10px; 
+    border-radius: 6px; 
     border: 1.5px solid var(--raisin-black);
-    padding: 15px;
-    font-size: 15px;
-    width: 300px;
-    margin-top: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
 }
 
 #buscar-pelicula::placeholder {
@@ -80,79 +88,72 @@ h1 {
     border-color: var(--maize);
 }
 
-/* Filtro de búsqueda de película por género */
-
 #filtro-container2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 15px;
-    gap: 15px;
+    gap: 8px;
+    margin-bottom: 16px;
+    width: 100%;
 }
 
 #filtro-genero {
     background-color: var(--baby-powder);
     border: 1.5px solid var(--raisin-black);
-    border-radius: 12px;
-    padding: 15px;
-    font-size: 15px;
-    width: 350px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#filtro-genero:focus {
-    outline: none;
-    border-color: var(--maize);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
 }
 
 #filtro-container2 button {
     background-color: var(--raisin-black);
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    width: 350px;
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 280px;
 }
 
-#filtro-container2 button:hover {
-    background-color: var(--baby-powder);
-    color: var(--raisin-black);
-    transform: translateY(-2px);
+/* TABLA DE PELÍCULAS - MOBILE FIRST */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: center;
 }
-
-#filtro-container2 button:active {
-    transform: translateY(0);
-}
-
-/* Tabla de películas */
 
 #pelis-tabla {
-    width: 100%;
+    width: auto;
+    min-width: 600px; 
     border-collapse: collapse;
     background-color: var(--baby-powder);
-    box-shadow: 0 5px 10px var(--raisin-black);
-    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--raisin-black);
+    border-radius: 5px;
     overflow: hidden;
 }
 
 #pelis-tabla th {
     background-color: var(--raisin-black);
     color: var(--baby-powder);
-    padding: 15px 15px;
+    padding: 10px 6px;
     text-align: center;
-    font-size: 18px;
+    font-size: 0.8rem; /* Tamaño reducido para móvil */
+    white-space: nowrap;
+    font-weight: var(--font-black);
 }
 
 #pelis-tabla td {
-    padding: 15px 15px;
+    padding: 8px 6px;
     border-bottom: 1px solid var(--raisin-black);
     vertical-align: top;
     text-align: center;
-    font-size: 20px;
+    font-size: 0.8rem; /* Tamaño reducido para móvil */
 }
 
 #pelis-tabla tbody tr:last-child td {
@@ -160,24 +161,50 @@ h1 {
 }
 
 #pelis-tabla tbody tr:hover {
-    background-color: var(--raisin-black);
-    color: var(--baby-powder);
-    cursor: pointer;
+    background-color: rgba(45, 42, 50, 0.1);
 }
 
 #pelis-tabla img {
-    width: 100px;
+    width: 50px;
     height: auto;
-    border-radius: 5px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 3px;
     cursor: pointer;
 }
 
-#pelis-tabla img:hover {
-    transform: scale(5);
-    box-shadow: 0 10px 20px var(--raisin-black);
-    z-index: 10;
-    position: relative;
+/* Modal para imagen ampliada en móvil */
+.imagen-ampliada {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 42, 50, 0.95);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-ampliada.mostrar {
+    display: flex;
+}
+
+.imagen-ampliada img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1001;
 }
 
 #pelis-tabla td:last-child {
@@ -188,94 +215,332 @@ h1 {
     background-color: var(--maize);
     color: var(--raisin-black);
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 6px 8px;
+    border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.5s ease;
-    margin-right: 5px;
+    font-size: 0.7rem; /* Tamaño reducido para móvil */
+    margin: 2px;
+    min-width: 60px;
+    font-weight: var(--font-regular);
 }
 
-#pelis-tabla button:hover {
-    background-color: var(--baby-powder);
-    color: var(--raisin-black);
-}
-
-/* Formulario para añadir una película */
-
+/* FORMULARIO - CENTRADO EN MÓVIL */
 #formulario {
+    position: relative;
     background-image: url("../assets/claqueta.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 15px;
-    padding: 30px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 5px 15px var(--raisin-black);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    box-shadow: 0 2px 4px var(--raisin-black);
+    width: 100%;
+    max-width: 400px; /* Limitamos el ancho máximo en móvil */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+}
+
+#formulario::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#formulario > * {
+    position: relative;
+    z-index: 2;
 }
 
 #peli-form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
 }
 
 #peli-form label {
     font-weight: 600;
-    color: #444;
-    margin-bottom: 5px;
-    display: flex;
+    color: var(--baby-powder);
+    font-size: 0.95rem;
 }
 
 #peli-form input,
 #peli-form select,
 #peli-form textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px;
     border: 1.5px solid var(--raisin-black);
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: var(--baby-powder);
 }
 
 #peli-form input:focus,
 #peli-form select:focus,
 #peli-form textarea:focus {
-    border-color: var(--baby-powder);
-    box-shadow: 0 0 0 5px var(--raisin-black);
+    border-color: var(--maize);
     outline: none;
+    box-shadow: 0 0 0 2px rgba(234, 225, 81, 0.3);
 }
 
 #peli-form textarea {
-    min-height: 100px;
+    min-height: 70px;
     resize: vertical;
+    font-family: "Lato", sans-serif;
 }
 
 #peli-form button {
     background-color: var(--raisin-black);
     color: white;
     border: none;
-    border-radius: 10px;
-    padding: 15px 25px;
-    font-size: 20px;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 8px;
+    width: 100%;
+    font-weight: var(--font-regular);
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
-    width: 100%;
 }
 
-#peli-form button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px var(--raisin-black);
+/* MEDIA QUERIES */
+
+/* TABLET (768px en adelante) */
+@media (min-width: 768px) {
+    body {
+        font-size: 15px;
+        padding: 18px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        padding: 14px;
+        border-radius: 10px;
+        max-width: 500px;
+    }
+    
+    #buscar-pelicula {
+        font-size: 1rem;
+        padding: 12px;
+        max-width: 320px;
+    }
+    
+    #filtro-container2 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+        max-width: 600px;
+    }
+    
+    #filtro-genero, #filtro-container2 button {
+        width: auto;
+        min-width: 180px;
+        max-width: none;
+        font-size: 1rem;
+    }
+    
+    .table-container {
+        margin-bottom: 25px;
+    }
+    
+    #pelis-tabla {
+        min-width: 700px;
+        border-radius: 8px;
+    }
+    
+    #pelis-tabla th {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+    
+    #pelis-tabla td {
+        padding: 10px 8px;
+        font-size: 0.9rem;
+    }
+    
+    #pelis-tabla img {
+        width: 70px;
+    }
+    
+    #pelis-tabla img:hover {
+        transform: scale(2);
+        box-shadow: 0 4px 8px var(--raisin-black);
+        z-index: 10;
+        position: relative;
+    }
+    
+    #pelis-tabla button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        min-width: 70px;
+    }
+    
+    #formulario {
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 500px;
+        margin: 16px auto;
+    }
+    
+    #peli-form {
+        gap: 15px;
+    }
+    
+    #peli-form input,
+    #peli-form select,
+    #peli-form textarea {
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    #peli-form label {
+        font-size: 1rem;
+    }
+    
+    #peli-form button {
+        padding: 14px 20px;
+        font-size: 1.1rem;
+    }
 }
 
-#peli-form button:active {
-    transform: translateY(0);
+/* ESCRITORIO (1024px en adelante) */
+@media (min-width: 1024px) {
+    body {
+        padding: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        padding: 15px;
+        border-radius: 12px;
+        margin: 12px auto;
+        max-width: 600px;
+    }
+    
+    #buscar-pelicula {
+        width: 300px;
+        max-width: none;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    #filtro-container2 {
+        padding: 15px;
+        gap: 15px;
+        max-width: 800px;
+    }
+    
+    #filtro-genero {
+        width: 250px;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    #filtro-container2 button {
+        width: 200px;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    
+    .table-container {
+        margin-bottom: 30px;
+        overflow-x: visible;
+    }
+    
+    #pelis-tabla {
+        min-width: auto;
+        width: 100%;
+        box-shadow: 0 4px 8px var(--raisin-black);
+        border-radius: 10px;
+    }
+    
+    #pelis-tabla th {
+        padding: 15px 10px;
+        font-size: 1rem;
+    }
+    
+    #pelis-tabla td {
+        padding: 12px 10px;
+        font-size: 0.95rem;
+    }
+    
+    #pelis-tabla tbody tr:hover {
+        background-color: var(--raisin-black);
+        color: var(--baby-powder);
+        cursor: pointer;
+    }
+    
+    #pelis-tabla img {
+        width: 80px;
+    }
+    
+    #pelis-tabla img:hover {
+        transform: scale(3);
+        box-shadow: 0 6px 12px var(--raisin-black);
+    }
+    
+    #pelis-tabla button {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        min-width: 80px;
+    }
+    
+    #pelis-tabla button:hover {
+        background-color: var(--baby-powder);
+        transform: translateY(-1px);
+    }
+    
+    #formulario {
+        background-attachment: fixed;
+        border-radius: 12px;
+        padding: 25px;
+        max-width: 600px;
+        box-shadow: 0 4px 10px var(--raisin-black);
+    }
+    
+    #formulario::before {
+        border-radius: 12px;
+    }
+    
+    #peli-form {
+        gap: 18px;
+    }
+    
+    #peli-form input,
+    #peli-form select,
+    #peli-form textarea {
+        padding: 12px 14px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+    
+    #peli-form label {
+        font-size: 1.05rem;
+    }
+    
+    #peli-form textarea {
+        min-height: 90px;
+    }
+    
+    #peli-form button {
+        padding: 14px 24px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+    
+    #peli-form button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px var(--raisin-black);
+        background-color: #1a171f;
+    }
 }
-
-/* AÑADIR A TODO MEDIAQUERIES Y QUE SEA MOBILE FIRST */
