@@ -9,18 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>Peliculeras</h1>
+        <h1>PELICULERAS</h1>
     </header>
     <main>
         <section id="peliculas">
-            <h2>Películas más vistas los últimos meses</h2>
             <div id="filtro-container1">
-                <h3>Filtrar películas por título</h3>
                 <label for="buscar-pelicula"></label>
                 <input type="text" id="buscar-pelicula" placeholder="Escribe el nombre de la película..." oninput="filtrarPorNombre()">
             </div>
             <div id="filtro-container2">
-                <h3>Filtrar películas por género</h3>
                 <label for="filtro-genero"></label>
                 <select id="filtro-genero" onchange="filtrarGenero()">
                     <option value="todos">Todos los géneros</option>
@@ -43,7 +40,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!--Aquí van las filas con las películas-->
+                    <!--Aquí van las filas con las películas metidas desde el DOM-->
                 </tbody>
             </table>
         </section>
@@ -52,10 +49,10 @@
             <h2>Añade una nueva película</h2>
             <form id="peli-form">
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" required>
+                <input type="text" id="name" placeholder="Título de la película" required>
                 
                 <label for="year">Año:</label>
-                <input type="number" id="year" min="1800" max="2025" pattern="[0-9]{4}" required>
+                <input type="number" id="year" min="1800" max="2025" pattern="[0-9]{4}" placeholder="Año de estreno" required>
                 
                 <label for="short-text">Descripción corta:</label>
                 <textarea id="short-text" name="short-text" placeholder="Escribe una breve descripción..." maxlength="300"></textarea>

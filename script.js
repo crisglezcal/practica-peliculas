@@ -6,56 +6,56 @@ const peliculas = [
         titulo: "Expediente Warren",
         año: 2013,
         descripcion: "Basada en hechos reales, los investigadores de fenómenos paranormales Ed y Lorraine Warren luchan por ayudar a una familia aterrorizada por una presencia oscura en su casa.",
-        url: "https://pics.filmaffinity.com/the_conjuring-155580725-large.jpg",
+        url: "https://pics.filmaffinity.com/the_conjuring_the_warren_files-153245956-large.jpg",
         genero: "Terror"
     },
     {
         titulo: "Midsommar",
         año: 2019,
         descripcion: "Una pareja viaja a Suecia para visitar el festival de verano de un pueblo, pero lo que comienza como unas vacaciones idílicas se convierte en una pesadilla.",
-        url: "https://pics.filmaffinity.com/midsommar-468126419-large.jpg",
+        url: "https://pics.filmaffinity.com/Midsommar-578791309-large.jpg",
         genero: "Terror"
     },
     {
         titulo: "La Bruja",
         año: 2015,
         descripcion: "Una familia de colonos en la Nueva Inglaterra de 1630 se desintegra debido a la brujería, la posesión y la paranoia.",
-        url: "https://pics.filmaffinity.com/the_witch-262821827-large.jpg",
+        url: "https://es.web.img2.acsta.net/pictures/16/02/02/12/33/062603.jpg",
         genero: "Terror"
     },
     {
         titulo: "La Zona de Interés",
         año: 2023,
         descripcion: "La vida idílica de un comandante de Auschwitz y su familia en una casa junto al campo de concentración, mostrando la normalización del horror.",
-        url: "https://pics.filmaffinity.com/the_zone_of_interest-433512324-large.jpg",
+        url: "https://www.academiadecine.com/wp-content/uploads/2024/11/la_zona_de_interes_reino_unido_cartel_2-scaled.jpg",
         genero: "Terror"
     },
     {
         titulo: "Guardianes de la Galaxia",
         año: 2014,
         descripcion: "Un grupo de criminales intergalácticos se unen para salvar la galaxia de una poderosa amenaza.",
-        url: "https://pics.filmaffinity.com/guardians_of_the_galaxy-351152353-large.jpg",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQB5vqv3CgJX_Gi6bTH5KKaEgQ-Ta-gVbBuQ&s",
         genero: "Acción"
     },
     {
         titulo: "Deadpool",
         año: 2016,
         descripcion: "Un ex-operativo de fuerzas especiales se somete a un experimento que le da poderes de curación acelerada y adopta el alter ego de Deadpool.",
-        url: "https://pics.filmaffinity.com/deadpool-196844309-large.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/en/2/23/Deadpool_%282016_poster%29.png",
         genero: "Acción"
     },
     {
         titulo: "Parque Jurásico",
         año: 1993,
         descripcion: "Un parque temático con dinosaurios clonados se convierte en una pesadilla cuando los animales escapan de su recinto.",
-        url: "https://pics.filmaffinity.com/jurassic_park-193682189-large.jpg",
+        url: "https://pics.filmaffinity.com/Parque_Juraasico_Jurassic_Park-214895994-large.jpg",
         genero: "Acción"
     },
     {
         titulo: "Trainspotting",
         año: 1996,
         descripcion: "Un grupo de jóvenes heroinómanos en Edimburgo lidia con sus adicciones y las consecuencias de sus elecciones de vida.",
-        url: "https://pics.filmaffinity.com/trainspotting-488503517-large.jpg",
+        url: "https://m.media-amazon.com/images/M/MV5BYmVkNGJkMzQtYWQwOS00OTZmLThjODQtZjNjNzllYzRiNTE0XkEyXkFqcGc@._V1_.jpg",
         genero: "Acción"
     },
     {
@@ -76,70 +76,70 @@ const peliculas = [
         titulo: "La Familia Addams",
         año: 1991,
         descripcion: "La excéntrica y macabra familia Addams debe enfrentarse a un estafador que intenta hacerse con su fortuna.",
-        url: "https://pics.filmaffinity.com/the_addams_family-162890762-large.jpg",
+        url: "https://pics.filmaffinity.com/La_familia_Addams-987196331-large.jpg",
         genero: "Comedia"
     },
     {
         titulo: "Pride",
         año: 2014,
         descripcion: "Activistas gays y lesbianas recaudan dinero para ayudar a las familias afectadas por la huelga de mineros británicos en 1984.",
-        url: "https://pics.filmaffinity.com/pride-894104842-large.jpg",
+        url: "https://es.web.img2.acsta.net/pictures/14/12/30/13/52/559263.jpg",
         genero: "Comedia"
     },
     {
         titulo: "Florida Project",
         año: 2017,
         descripcion: "Sigue a una niña de seis años y sus amigos durante sus vacaciones de verano mientras se meten en problemas y descubren el mundo.",
-        url: "https://pics.filmaffinity.com/the_florida_project-107353288-large.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/en/b/b2/The_Florida_Project.jpg",
         genero: "Comedia"
     },
     {
         titulo: "ET",
         año: 1982,
         descripcion: "Un niño solitario hace amistad con un extraterrestre abandonado en la Tierra y lo ayuda a encontrar el camino de regreso a casa.",
-        url: "https://pics.filmaffinity.com/e_t_the_extra_terrestrial-730752289-large.jpg",
+        url: "https://ccinformacion.ucm.es//file/etmovieposter?ver",
         genero: "Comedia"
     },
     {
         titulo: "20000 Especies de Abejas",
         año: 2023,
         descripcion: "Una niña de 8 años llamada Cocó explora su identidad de género durante un verano en el País Vasco.",
-        url: "https://pics.filmaffinity.com/20_000_species_of_bees-273009517-large.jpg",
+        url: "https://www.premiosgoya.com/wp-content/uploads/2023/11/system/uploads/feature_film/poster/2611/Cartel_20000EspeciesdeAbejas-320x457.jpg",
         genero: "Romántica"
     },
     {
         titulo: "Retrato de una Mujer en Llamas",
         año: 2019,
         descripcion: "En la Francia del siglo XVIII, una pintora recibe el encargo de hacer el retrato de bodas de una joven que acaba de salir del convento.",
-        url: "https://pics.filmaffinity.com/portrait_of_a_lady_on_fire-377008039-large.jpg",
+        url: "https://pics.filmaffinity.com/Retrato_de_una_mujer_en_llamas-111604730-large.jpg",
         genero: "Romántica"
     },
     {
         titulo: "Cinco Lobitos",
         año: 2022,
         descripcion: "Una madre primeriza recurre a su propia madre para que la ayude a cuidar de su bebé, explorando la maternidad y las relaciones familiares.",
-        url: "https://pics.filmaffinity.com/cinco_lobitos-488228259-large.jpg",
+        url: "https://m.media-amazon.com/images/M/MV5BYzI2NTIzN2YtYzIwMi00YzNlLTkzZTEtNTQyODBkZWZmNTUzXkEyXkFqcGc@._V1_.jpg",
         genero: "Romántica"
     },
     {
         titulo: "Te Estoy Amando Locamente",
         año: 2023,
         descripcion: "En el Madrid de los años 70, durante los últimos años del franquismo, una joven descubre su identidad sexual y se enamora de otra mujer mientras lucha por la libertad en una sociedad represiva.",
-        url: "https://pics.filmaffinity.com/te_estoy_amando_locamente-194815463-large.jpg",
+        url: "https://pics.filmaffinity.com/Te_estoy_amando_locamente-779963184-large.jpg",
         genero: "Romántica"
     },
     {
         titulo: "El Maestro que Prometió el Mar",
         año: 2023,
         descripcion: "Un profesor se traslada a un pueblo costero para dar clase a un grupo de estudiantes con dificultades, transformando sus vidas.",
-        url: "https://pics.filmaffinity.com/el_maestro_que_prometio_el_mar-583915826-large.jpg",
+        url: "https://pics.filmaffinity.com/El_maestro_que_prometiao_el_mar-903273076-large.jpg",
         genero: "Romántica"
     },
     {
         titulo: "Mamífera",
         año: 2023,
         descripcion: "Una mujer de 40 años descubre que está embarazada de trillizos, lo que le hace replantearse su vida y relaciones.",
-        url: "https://pics.filmaffinity.com/mamifera-338126011-large.jpg",
+        url: "https://hips.hearstapps.com/hmg-prod/images/gh5ybvgwuaaf17s-662adce9b64b9.jpeg?resize=980:*",
         genero: "Romántica"
     }
 ];

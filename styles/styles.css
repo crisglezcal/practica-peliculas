@@ -14,13 +14,19 @@
 }
 
 
-/* BODY, HEADER Y FOOTER */
+/* BODY Y HEADER */
 
 body {
-    background-color: var(--maize);
+    background-image: url("../assets/palomitas2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: "Lato", sans-serif;
     color: var (--raisin-black);
     font-size: 15px;
+    padding: 30px 30px;
+    margin: 30px 30px;
 }
 
 header {
@@ -32,28 +38,22 @@ header {
     z-index: 999;
 }
 
-/* h1, h2 y h3 */
-
-h1, h2, h3 {
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: var(--font-black);
-}
+/* h1 */
 
 h1 {
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--raisin-black);
+    font-family: var(--font-black);
+    background-color: var(--maize);
+    border-radius: 15px;
+    padding: 10px 10px;
     font-size: 60px;
+    margin: 10px auto;
 }
-
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
 
 /* ID */
+
+/* Filtro de búsqueda de película por nombre */
 
 #filtro-container1 {
     text-align: center;
@@ -67,7 +67,6 @@ h3 {
     font-size: 15px;
     width: 300px;
     margin-top: 10px;
-    font-family: 'BBH Sans Bogle', sans-serif;
 }
 
 #buscar-pelicula::placeholder {
@@ -81,6 +80,8 @@ h3 {
     border-color: var(--maize);
 }
 
+/* Filtro de búsqueda de película por género */
+
 #filtro-container2 {
     display: flex;
     flex-direction: column;
@@ -88,12 +89,6 @@ h3 {
     justify-content: center;
     padding: 15px;
     gap: 15px;
-}
-
-#filtro-container2 h3 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
 }
 
 #filtro-genero {
@@ -133,12 +128,154 @@ h3 {
     transform: translateY(0);
 }
 
-#pelis-tabla {
+/* Tabla de películas */
 
+#pelis-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--baby-powder);
+    box-shadow: 0 5px 10px var(--raisin-black);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-#formulario {
+#pelis-tabla th {
+    background-color: var(--raisin-black);
+    color: var(--baby-powder);
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 18px;
+}
 
+#pelis-tabla td {
+    padding: 15px 15px;
+    border-bottom: 1px solid var(--raisin-black);
+    vertical-align: top;
+    text-align: center;
+    font-size: 20px;
+}
+
+#pelis-tabla tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#pelis-tabla tbody tr:hover {
+    background-color: var(--raisin-black);
+    color: var(--baby-powder);
+    cursor: pointer;
+}
+
+#pelis-tabla img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+#pelis-tabla img:hover {
+    transform: scale(5);
+    box-shadow: 0 10px 20px var(--raisin-black);
+    z-index: 10;
+    position: relative;
+}
+
+#pelis-tabla td:last-child {
+    white-space: nowrap; 
+}
+
+#pelis-tabla button {
+    background-color: var(--maize);
+    color: var(--raisin-black);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-right: 5px;
+}
+
+#pelis-tabla button:hover {
+    background-color: var(--baby-powder);
+    color: var(--raisin-black);
+}
+
+/* Formulario para añadir una película */
+
+#formulario {
+    background-image: url("../assets/claqueta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 5px 15px var(--raisin-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#peli-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#peli-form label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+#peli-form input,
+#peli-form select,
+#peli-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid var(--raisin-black);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+#peli-form input:focus,
+#peli-form select:focus,
+#peli-form textarea:focus {
+    border-color: var(--baby-powder);
+    box-shadow: 0 0 0 5px var(--raisin-black);
+    outline: none;
+}
+
+#peli-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#peli-form button {
+    background-color: var(--raisin-black);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#peli-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--raisin-black);
+}
+
+#peli-form button:active {
+    transform: translateY(0);
 }
 
 /* AÑADIR A TODO MEDIAQUERIES Y QUE SEA MOBILE FIRST */
