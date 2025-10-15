@@ -300,7 +300,7 @@ function manejarFormulario(event) {
         // new Date() toma la hora y fecha actuales del sistema y .getFullYear() extra solo el año
     const currentYear = new Date().getFullYear(); 
     if (!titulo || !descripcion || !url || !genero) {
-        alert("Por favor, completa todos los campos.");
+        alert("Por favor, completa todos los campos");
         return;
     }
 
@@ -384,21 +384,21 @@ form.addEventListener("submit", function(event){
     // Validación de descripción:
     const descriptionRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ0-9\s\-\:\,\.\!\?\(\)]{1,300}$/ ;
     if (!descriptionRegex.test(description)) {
-        alert("Por favor, introduce un año válido");
+        alert("Por favor, introduce una descripción válida");
         return;
     }
 
     // Validación de url:
     const urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
     if (!urlRegex.test(url)) {
-        alert("Por favor, introduce un año válido");
+        alert("Por favor, introduce una url válida");
         return;
     }
 
-    // Validación de gender:
+    // Validación de género:
     const genderRegex = /^(Terror|Acción|Comedia|Romántica)$/i;
     if (!genderRegex.test(gender)) {
-        alert("Por favor, introduce un año válido");
+        alert("Por favor, introduce un género válido");
         return;
     }
 
