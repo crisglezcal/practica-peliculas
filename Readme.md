@@ -44,7 +44,7 @@ Este proyecto es una landing page para un gestor de películas, desarrollada com
 ### 🧾 Formulario de gestión
 - **Añadir nuevas películas** ➕
 - **Editar películas existentes** ✏️
-- Validación de formulario con regex
+- **Validación de formulario con regex** 🔐
 
 ### 👟 Footer
 - Información (bootcamp, título de la práctica y nombre)
