@@ -225,7 +225,7 @@ main {
 }
 
 #formulario::before {
-    content: '';                                      /* Contenido vacío para pseudo-elemento */
+    content: '';                                      
     position: absolute;                               
     top: 0;                                           
     left: 0;                                          
@@ -233,12 +233,12 @@ main {
     bottom: 0;                                        
     background: rgba(0, 0, 0, 0.6);                  
     border-radius: 8px;                               
-    z-index: 1;                                       /* Capa por detrás del contenido */
+    z-index: 1;                                       
 }
 
 #formulario > * {
     position: relative;                               
-    z-index: 2;                                       /* Capa por encima del pseudo-elemento */
+    z-index: 2;                                       
 }
 
 #peli-form {
@@ -291,6 +291,23 @@ main {
     font-weight: var(--font-regular);                 
     cursor: pointer;                                  
     transition: all 0.3s ease;                        
+}
+
+/* ################# FOOTER ################# */
+
+footer {
+    background-color: var(--raisin-black);
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: auto;
+}
+
+footer p {
+    display: inline-block;
+    margin: 0 20px;
 }
 
 /* ################# MEDIA QUERIES ################# */
@@ -376,7 +393,6 @@ main {
         display: inline-block;                        
     }
     
-
     #filtro-container1,
     #filtro-container2 {
         display: flex;                                 
@@ -391,6 +407,16 @@ main {
         width: 100%;                                  
         max-width: 280px;                             
         margin: 0 auto;                               
+    }
+    
+    footer {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    footer p {
+        display: block;
+        margin: 5px 0;
     }
 }
 
@@ -490,6 +516,16 @@ main {
     #peli-form button {
         padding: 14px 20px;                           
         font-size: 16px;                            
+    }
+    
+    footer {
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    
+    footer p {
+        display: inline-block;
+        margin: 0 25px;
     }
 }
 
@@ -642,5 +678,15 @@ main {
         transform: translateY(-2px);                  
         box-shadow: 0 4px 8px var(--raisin-black);    
         background-color: #1a171f;                    
+    }
+    
+    footer {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+    
+    footer p {
+        display: inline-block;
+        margin: 0 30px;
     }
 }
