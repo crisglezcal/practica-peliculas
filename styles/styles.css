@@ -1,353 +1,350 @@
-/* FONTS */
+/* ################# FONTS ################# */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&display=swap');
 
-/* VARIABLES */
+/* ################# VARIABLES ################# */
 
 :root {
-    --raisin-black: #2d2a32ff;
-    --maize: #eae151ff;
-    --vanilla: #eeefa8ff;
-    --baby-powder: #fafdf6ff;
-    --font-black: 900;
-    --font-regular: 400;
-    --font-italic: 300;
+    --raisin-black: #2d2a32ff; 
+    --maize: #eae151ff;        
+    --vanilla: #eeefa8ff;      
+    --baby-powder: #fafdf6ff;  
+    --font-black: 900;         
+    --font-regular: 400;       
+    --font-italic: 300;        
 }
 
-/* HTML COMPLETO */
+/* ################# HTML COMPLETO ################# */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;    
+    margin: 0;                 
+    padding: 0;                
 }
 
-/* BODY */
+/* ################# BODY ################# */
 
 body {
-    background-image: url("../assets/palomitas2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family: "Lato", sans-serif;
-    color: var(--raisin-black);
-    font-size: 14px;
-    padding: 12px;
-    line-height: 1.4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    background-image: url("../assets/palomitas2.jpg"); 
+    background-size: cover;                           
+    background-position: center;                      
+    background-attachment: fixed;                     
+    background-repeat: no-repeat;                     
+    font-family: "Lato", sans-serif;                  
+    color: var(--raisin-black);                       
+    font-size: 14px;                                  
+    padding: 12px;                                    
+    line-height: 1.4;                                 
+    display: flex;                                     
+    flex-direction: column;                           
+    align-items: center;                              
+    min-height: 100vh;                                
 }
 
-/* HEADER Y ELEMENTOS SUPERIORES */
+/* ################# HEADER Y ELEMENTOS SUPERIORES ################# */
 
 header {
-    padding: 8px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 8px 0;                                   
+    width: 100%;                                      
+    display: flex;                                     
+    flex-direction: column;                           
+    align-items: center;                              
 }
 
 h1 {
-    text-align: center;
-    text-shadow: 1px 1px 1px var(--raisin-black);
-    font-weight: var(--font-black);
-    background-color: var(--maize);
-    border-radius: 8px;
-    padding: 12px 8px;
-    font-size: 1.5rem;
-    margin: 8px auto;
-    width: 100%;
-    max-width: 400px;
+    text-align: center;                               
+    text-shadow: 1px 1px 1px var(--raisin-black);     
+    font-weight: var(--font-black);                   
+    background-color: var(--maize);                   
+    border-radius: 8px;                               
+    padding: 12px 8px;                                
+    font-size: 1.5rem;                                
+    margin: 8px auto;                                 
+    width: 100%;                                      
+    max-width: 400px;                                 
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* ################# CONTENEDOR PRINCIPAL ################# */
 
 main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;                                      
+    display: flex;                                     
+    flex-direction: column;                           
+    align-items: center;                              
 }
 
-/* FILTROS */
+/* ################# FILTROS ################# */
+
 #filtro-container1 {
-    text-align: center;
-    margin-bottom: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;                               
+    margin-bottom: 10px;                              
+    width: 100%;                                      
+    display: flex;                                     
+    justify-content: center;                          
 }
 
 #buscar-pelicula {
-    background-color: var(--baby-powder); 
-    border-radius: 6px; 
-    border: 1.5px solid var(--raisin-black);
-    padding: 10px;
-    font-size: 0.9rem;
-    width: 100%;
-    max-width: 280px;
+    background-color: var(--baby-powder);             
+    border-radius: 5px;                               
+    border: 1.5px solid var(--raisin-black);          
+    padding: 10px;                                    
+    font-size: 15px;                                
+    width: 100%;                                      
+    max-width: 280px;                                 
 }
 
 #buscar-pelicula::placeholder {
-    font-style: italic;
-    font-weight: 300;
-    color: #666;
+    font-style: italic;                               
+    font-weight: 300;                                 
+    color: #666;                                      
 }
 
 #buscar-pelicula:focus {
-    outline: none;
-    border-color: var(--maize);
+    outline: none;                                    
+    border-color: var(--maize);                       
 }
 
 #filtro-container2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 16px;
-    width: 100%;
+    display: flex;                                     
+    flex-direction: column;                           
+    align-items: center;                              
+    gap: 10px;                                         
+    margin-bottom: 15px;                              
+    width: 100%;                                      
 }
 
 #filtro-genero {
-    background-color: var(--baby-powder);
-    border: 1.5px solid var(--raisin-black);
-    border-radius: 6px;
-    padding: 10px;
-    font-size: 0.9rem;
-    width: 100%;
-    max-width: 280px;
+    background-color: var(--baby-powder);             
+    border: 1.5px solid var(--raisin-black);          
+    border-radius: 5px;                               
+    padding: 10px;                                    
+    font-size: 15px;                                
+    width: 100%;                                      
+    max-width: 280px;                                 
 }
 
 #filtro-container2 button {
-    background-color: var(--raisin-black);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 16px;
-    font-size: 0.9rem;
-    width: 100%;
-    max-width: 280px;
+    background-color: var(--raisin-black);            
+    color: white;                                     
+    border: none;                                     
+    border-radius: 5px;                               
+    padding: 10px 15px;                               
+    font-size: 15px;                                
+    width: 100%;                                      
+    max-width: 280px;                                 
 }
 
-/* TABLA DE PELÍCULAS */
+/* ################# TABLA DE PELÍCULAS ################# */
 
 .table-container {
-    width: 100%;
-    overflow-x: auto;
-    margin-bottom: 20px;
-    -webkit-overflow-scrolling: touch;
-    display: flex;
-    justify-content: center;
+    width: 100%;                                      
+    overflow-x: auto;                                 
+    margin-bottom: 20px;                              
+    -webkit-overflow-scrolling: touch;                
+    display: flex;                                     
+    justify-content: center;                          
 }
 
 #pelis-tabla {
-    width: auto;
-    min-width: 600px; 
-    border-collapse: collapse;
-    background-color: var(--baby-powder);
-    box-shadow: 0 2px 4px var(--raisin-black);
-    border-radius: 5px;
-    overflow: hidden;
+    width: auto;                                      
+    min-width: 600px;                                 
+    border-collapse: collapse;                        
+    background-color: var(--baby-powder);             
+    box-shadow: 0 2px 4px var(--raisin-black);        
+    border-radius: 5px;                               
+    overflow: hidden;                                 
 }
 
 #pelis-tabla th {
-    background-color: var(--raisin-black);
-    color: var(--baby-powder);
-    padding: 10px 6px;
-    text-align: center;
-    font-size: 0.8rem;
-    white-space: nowrap;
-    font-weight: var(--font-black);
+    background-color: var(--raisin-black);            
+    color: var(--baby-powder);                        
+    padding: 10px 6px;                                
+    text-align: center;                               
+    font-size: 12px;                                
+    white-space: nowrap;                              
+    font-weight: var(--font-black);                   
 }
 
 #pelis-tabla td {
-    padding: 8px 6px;
-    border-bottom: 1px solid var(--raisin-black);
-    vertical-align: top;
-    text-align: center;
-    font-size: 0.8rem;
+    padding: 8px 6px;                                 
+    border-bottom: 1px solid var(--raisin-black);     
+    vertical-align: top;                              
+    text-align: center;                               
+    font-size: 12px;                                
 }
 
 #pelis-tabla tbody tr:last-child td {
-    border-bottom: none;
+    border-bottom: none;                              
 }
 
 #pelis-tabla tbody tr:hover {
-    background-color: rgba(45, 42, 50, 0.1);
+    background-color: rgba(45, 42, 50, 0.1);          
 }
 
 #pelis-tabla img {
-    width: 50px;
-    height: auto;
-    border-radius: 3px;
-    cursor: pointer;
+    width: 50px;                                      
+    height: auto;                                     
+    border-radius: 3px;                               
+    cursor: pointer;                                  
 }
 
 #pelis-tabla td:last-child {
-    white-space: nowrap; 
+    white-space: nowrap;                              
 }
 
 #pelis-tabla button {
-    background-color: var(--maize);
-    color: var(--raisin-black);
-    border: none;
-    padding: 6px 8px;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 0.7rem;
-    margin: 2px;
-    min-width: 60px;
-    font-weight: var(--font-regular);
+    background-color: var(--maize);                   
+    color: var(--raisin-black);                       
+    border: none;                                     
+    padding: 6px 8px;                                 
+    border-radius: 3px;                               
+    cursor: pointer;                                  
+    font-size: 12px;                                
+    margin: 2px;                                      
+    min-width: 60px;                                  
+    font-weight: var(--font-regular);                 
 }
 
-/* FORMULARIO */
+/* ################# FORMULARIO ################# */
 
 #formulario {
-    position: relative;
-    background-image: url("../assets/claqueta.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 12px 0;
-    box-shadow: 0 2px 4px var(--raisin-black);
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;                               
+    background-image: url("../assets/claqueta.jpg");  
+    background-size: cover;                           
+    background-position: center;                      
+    background-repeat: no-repeat;                     
+    border-radius: 8px;                               
+    padding: 16px;                                    
+    margin: 12px 0;                                   
+    box-shadow: 0 2px 4px var(--raisin-black);        
+    width: 100%;                                      
+    max-width: 400px;                                 
+    display: flex;                                     
+    flex-direction: column;                           
+    align-items: center;                              
 }
 
 #formulario::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    z-index: 1;
+    content: '';                                      /* Contenido vacío para pseudo-elemento */
+    position: absolute;                               
+    top: 0;                                           
+    left: 0;                                          
+    right: 0;                                         
+    bottom: 0;                                        
+    background: rgba(0, 0, 0, 0.6);                  
+    border-radius: 8px;                               
+    z-index: 1;                                       /* Capa por detrás del contenido */
 }
 
 #formulario > * {
-    position: relative;
-    z-index: 2;
+    position: relative;                               
+    z-index: 2;                                       /* Capa por encima del pseudo-elemento */
 }
 
 #peli-form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    width: 100%;                                      
+    display: flex;                                     
+    flex-direction: column;                           
+    gap: 12px;                                        
 }
 
 #peli-form label {
-    font-weight: 600;
-    color: var(--baby-powder);
-    font-size: 0.95rem;
+    font-weight: 600;                                 
+    color: var(--baby-powder);                        
+    font-size: 15px;                               
 }
 
 #peli-form input,
 #peli-form select,
 #peli-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1.5px solid var(--raisin-black);
-    border-radius: 6px;
-    font-size: 0.9rem;
-    background-color: var(--baby-powder);
+    width: 100%;                                      
+    padding: 10px;                                    
+    border: 1.5px solid var(--raisin-black);          
+    border-radius: 6px;                               
+    font-size: 15px;                                
+    background-color: var(--baby-powder);             
 }
 
 #peli-form input:focus,
 #peli-form select:focus,
 #peli-form textarea:focus {
-    border-color: var(--maize);
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(234, 225, 81, 0.3);
+    border-color: var(--maize);                       
+    outline: none;                                    
+    box-shadow: 0 0 0 2px rgba(234, 225, 81, 0.3);   
 }
 
 #peli-form textarea {
-    min-height: 70px;
-    resize: vertical;
-    font-family: "Lato", sans-serif;
+    min-height: 70px;                                 
+    resize: vertical;                                 
+    font-family: "Lato", sans-serif;                  
 }
 
 #peli-form button {
-    background-color: var(--raisin-black);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 12px;
-    font-size: 1rem;
-    margin-top: 8px;
-    width: 100%;
-    font-weight: var(--font-regular);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    background-color: var(--raisin-black);            
+    color: white;                                     
+    border: none;                                     
+    border-radius: 6px;                               
+    padding: 12px;                                    
+    font-size: 15px;                                  
+    margin-top: 8px;                                  
+    width: 100%;                                      
+    font-weight: var(--font-regular);                 
+    cursor: pointer;                                  
+    transition: all 0.3s ease;                        
 }
 
-/* MEDIA QUERIES */
+/* ################# MEDIA QUERIES ################# */
 
-/* ========= Móvil ========= */
-
-/* El título h1 y los filtros por título y por género están centrados */
-/* La tabla se muestra como tarjeras organizadas verticalmente con la información de cada película */
-/* El formulario se muestra centrado del mismo tamaño que las tarjetas de las películas */
+/* ========= Móvil (max-width: 767px) ========= */
 
 @media (max-width: 767px) {
     body {
-        padding: 10px;
+        padding: 10px;                                
     }
     
     .table-container {
-        overflow-x: visible;
-        width: 100%;
+        overflow-x: visible;                          
+        width: 100%;                                  
     }
     
     #pelis-tabla {
-        min-width: 100%;
-        display: block;
+        min-width: 100%;                              
+        display: block;                               
     }
     
     #pelis-tabla thead {
-        display: none;
+        display: none;                                
     }
     
     #pelis-tabla tbody, 
     #pelis-tabla tr {
-        display: block;
-        width: 100%;
+        display: block;                               
+        width: 100%;                                  
     }
     
     #pelis-tabla tr {
-        margin-bottom: 15px;
-        border: 1px solid var(--raisin-black);
-        border-radius: 8px;
-        padding: 15px;
-        background-color: var(--baby-powder);
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        text-align: center; 
+        margin-bottom: 15px;                          
+        border: 1px solid var(--raisin-black);        
+        border-radius: 8px;                           
+        padding: 15px;                                
+        background-color: var(--baby-powder);         
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);       
+        text-align: center;                           
     }
     
     #pelis-tabla td {
-        display: block;
-        padding: 10px 8px;
-        border: none;
-        text-align: center; 
-        font-size: 0.9rem;
-        position: relative;
-        border-bottom: 1px solid #eee;
+        display: block;                               
+        padding: 10px 8px;                            
+        border: none;                                 
+        text-align: center;                           
+        font-size: 15px;                            
+        position: relative;                           
+        border-bottom: 1px solid #eee;                
     }
     
     #pelis-tabla td:last-child {
-        border-bottom: none;
-        white-space: normal;
+        border-bottom: none;                          
+        white-space: normal;                          
     }
     
     #pelis-tabla td:nth-child(1)::before { content: "Título: "; }
@@ -358,299 +355,292 @@ main {
     #pelis-tabla td:nth-child(6)::before { content: "Acciones: "; }
     
     #pelis-tabla td::before {
-        font-weight: var(--font-black);
-        display: block; 
-        width: 100%;
-        color: var(--raisin-black);
-        margin-bottom: 5px;
-        text-align: center;
+        font-weight: var(--font-black);               
+        display: block;                               
+        width: 100%;                                  
+        color: var(--raisin-black);                   
+        margin-bottom: 5px;                           
+        text-align: center;                           
     }
     
     #pelis-tabla img {
-        width: 100%;
-        max-width: 150px;
-        display: block;
-        margin: 5px auto;
+        width: 100%;                                  
+        max-width: 150px;                             
+        display: block;                               
+        margin: 5px auto;                             
     }
     
     #pelis-tabla button {
-        width: calc(50% - 10px);
-        margin: 5px;
-        display: inline-block;
+        width: calc(50% - 10px);                      
+        margin: 5px;                                  
+        display: inline-block;                        
     }
     
+
     #filtro-container1,
     #filtro-container2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        display: flex;                                 
+        flex-direction: column;                       
+        align-items: center;                          
+        width: 100%;                                  
     }
     
     #buscar-pelicula,
     #filtro-genero,
     #filtro-container2 button {
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
+        width: 100%;                                  
+        max-width: 280px;                             
+        margin: 0 auto;                               
     }
 }
 
-/* ========= Tablet (768px en adelante) ========= */
-
-/* El título h1 y los filtros por título y por género están centrados */
-/* La tabla con las películas se muestra centrada igual que en el ordenador (adaptada a una pantalla más pequeña) */
-/* El formulario se muestra centrado */
+/* ========= Tablet (min-width: 768px) ========= */
 
 @media (min-width: 768px) {
     body {
-        font-size: 15px;
-        padding: 18px;
+        font-size: 15px;                              
+        padding: 18px;                                
     }
     
     h1 {
-        font-size: 2rem;
-        padding: 14px;
-        border-radius: 10px;
-        max-width: 500px;
+        font-size: 32px;                              
+        padding: 14px;                                
+        border-radius: 10px;                          
+        max-width: 500px;                             
     }
     
     #buscar-pelicula {
-        font-size: 1rem;
-        padding: 12px;
-        max-width: 320px;
+        font-size: 16px;                              
+        padding: 12px;                                
+        max-width: 320px;                            
     }
     
     #filtro-container2 {
-        flex-direction: row;
-        justify-content: center; 
-        gap: 12px;
-        max-width: 600px;
+        flex-direction: row;                          
+        justify-content: center;                      
+        gap: 12px;                                    
+        max-width: 600px;                            
     }
     
     #filtro-genero, #filtro-container2 button {
-        width: auto;
-        min-width: 180px;
-        max-width: none;
-        font-size: 1rem;
+        width: auto;                                  
+        min-width: 180px;                             
+        max-width: none;                              
+        font-size: 16px;                              
     }
     
     .table-container {
-        margin-bottom: 25px;
+        margin-bottom: 25px;                          
     }
     
     #pelis-tabla {
-        min-width: 700px;
-        border-radius: 8px;
+        min-width: 700px;                             
+        border-radius: 8px;                           
     }
     
     #pelis-tabla th {
-        padding: 12px 8px;
-        font-size: 0.9rem;
+        padding: 12px 8px;                            
+        font-size: 15px;                            
     }
     
     #pelis-tabla td {
-        padding: 10px 8px;
-        font-size: 0.9rem;
+        padding: 10px 8px;                            
+        font-size: 15px;                            
     }
     
     #pelis-tabla img {
-        width: 70px;
+        width: 70px;                                  
     }
     
     #pelis-tabla img:hover {
-        transform: scale(2);
-        box-shadow: 0 4px 8px var(--raisin-black);
-        z-index: 10;
-        position: relative;
+        transform: scale(2);                          
+        box-shadow: 0 4px 8px var(--raisin-black);    
+        z-index: 10;                                  
+        position: relative;                           
     }
     
     #pelis-tabla button {
-        padding: 6px 10px;
-        font-size: 0.8rem;
-        min-width: 70px;
+        padding: 6px 10px;                            
+        font-size: 12px;                            
+        min-width: 70px;                              
     }
     
     #formulario {
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 500px;
-        margin: 16px auto;
+        padding: 20px;                                
+        border-radius: 10px;                          
+        max-width: 500px;                             
+        margin: 16px auto;                            
     }
     
     #peli-form {
-        gap: 15px;
+        gap: 15px;                                    
     }
     
     #peli-form input,
     #peli-form select,
     #peli-form textarea {
-        padding: 12px;
-        font-size: 1rem;
+        padding: 12px;                                
+        font-size: 16px;                              
     }
     
     #peli-form label {
-        font-size: 1rem;
+        font-size: 16px;                              
     }
     
     #peli-form button {
-        padding: 14px 20px;
-        font-size: 1.1rem;
+        padding: 14px 20px;                           
+        font-size: 16px;                            
     }
 }
 
-/* ========= Ordenador (768px en adelante) ========= */
-
-/* El título h1 y los filtros por título y por género están centrados */
-/* La tabla con las películas se muestra centrada */
-/* El formulario se muestra centrado */
+/* ========= Ordenador (min-width: 1024px) ========= */
 
 @media (min-width: 1024px) {
     body {
-        padding: 25px;
-        max-width: 1200px;
-        margin: 0 auto;
+        padding: 25px;                                
+        max-width: 1200px;                            
+        margin: 0 auto;                               
     }
     
     h1 {
-        font-size: 3rem;
-        padding: 15px;
-        border-radius: 12px;
-        margin: 12px auto;
-        max-width: 600px;
+        font-size: 48px;                              
+        padding: 15px;                                
+        border-radius: 12px;                          
+        margin: 12px auto;                            
+        max-width: 600px;                             
     }
     
     .filtros-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 25px;
+        width: 100%;                                  
+        display: flex;                                 
+        flex-direction: column;                       
+        align-items: center;                          
+        margin-bottom: 25px;                          
     }
     
     #filtro-container1 {
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 15px;
+        justify-content: center;                      
+        width: 100%;                                  
+        margin-bottom: 15px;                          
     }
     
     #buscar-pelicula {
-        width: 350px;
-        padding: 12px;
-        font-size: 1rem;
+        width: 350px;                                 
+        padding: 12px;                                
+        font-size: 16px;                              
     }
     
     #filtro-container2 {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-        max-width: 600px;
+        flex-direction: row;                          
+        justify-content: center;                      
+        align-items: center;                          
+        gap: 20px;                                    
+        width: 100%;                                  
+        max-width: 600px;                             
     }
     
     #filtro-genero {
-        width: 250px;
-        padding: 12px;
-        font-size: 1rem;
+        width: 250px;                                 
+        padding: 12px;                                
+        font-size: 16px;                              
     }
     
     #filtro-container2 button {
-        width: 180px;
-        padding: 12px;
-        font-size: 1rem;
+        width: 180px;                                 
+        padding: 12px;                                
+        font-size: 16px;                              
     }
     
     .table-container {
-        margin-bottom: 30px;
-        overflow-x: visible;
-        width: 100%;
+        margin-bottom: 30px;                          
+        overflow-x: visible;                          
+        width: 100%;                                  
     }
     
     #pelis-tabla {
-        min-width: auto;
-        width: 100%;
-        box-shadow: 0 4px 8px var(--raisin-black);
-        border-radius: 10px;
+        min-width: auto;                              
+        width: 100%;                                  
+        box-shadow: 0 4px 8px var(--raisin-black);    
+        border-radius: 10px;                          
     }
     
     #pelis-tabla th {
-        padding: 15px 10px;
-        font-size: 1rem;
+        padding: 15px 10px;                           
+        font-size: 16px;                              
     }
     
     #pelis-tabla td {
-        padding: 12px 10px;
-        font-size: 0.95rem;
+        padding: 12px 10px;                           
+        font-size: 15px;                           
     }
     
     #pelis-tabla tbody tr:hover {
-        background-color: var(--raisin-black);
-        color: var(--baby-powder);
-        cursor: pointer;
+        background-color: var(--raisin-black);        
+        color: var(--baby-powder);                    
+        cursor: pointer;                              
     }
     
     #pelis-tabla img {
-        width: 80px;
+        width: 80px;                                  
     }
     
     #pelis-tabla img:hover {
-        transform: scale(3);
-        box-shadow: 0 6px 12px var(--raisin-black);
+        transform: scale(3);                          
+        box-shadow: 0 6px 12px var(--raisin-black);   
     }
     
     #pelis-tabla button {
-        padding: 6px 12px;
-        font-size: 0.85rem;
-        min-width: 80px;
+        padding: 6px 12px;                            
+        font-size: 13px;                           
+        min-width: 80px;                              
     }
     
     #pelis-tabla button:hover {
-        background-color: var(--baby-powder);
-        transform: translateY(-1px);
+        background-color: var(--baby-powder);         
+        transform: translateY(-1px);                  
     }
     
     #formulario {
-        background-attachment: fixed;
-        border-radius: 12px;
-        padding: 25px;
-        max-width: 600px;
-        box-shadow: 0 4px 10px var(--raisin-black);
+        background-attachment: fixed;                 
+        border-radius: 12px;                          
+        padding: 25px;                                
+        max-width: 600px;                             
+        box-shadow: 0 4px 10px var(--raisin-black);   
     }
     
     #formulario::before {
-        border-radius: 12px;
+        border-radius: 12px;                          
     }
     
     #peli-form {
-        gap: 18px;
+        gap: 18px;                                    
     }
     
     #peli-form input,
     #peli-form select,
     #peli-form textarea {
-        padding: 12px 14px;
-        border-radius: 8px;
-        font-size: 1rem;
+        padding: 12px 14px;                           
+        border-radius: 8px;                           
+        font-size: 16px;                              
     }
     
     #peli-form label {
-        font-size: 1.05rem;
+        font-size: 16px;                           
     }
     
     #peli-form textarea {
-        min-height: 90px;
+        min-height: 90px;                             
     }
     
     #peli-form button {
-        padding: 14px 24px;
-        font-size: 1.1rem;
-        border-radius: 8px;
+        padding: 14px 24px;                           
+        font-size: 16px;                            
+        border-radius: 8px;                           
     }
     
     #peli-form button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px var(--raisin-black);
-        background-color: #1a171f;
+        transform: translateY(-2px);                  
+        box-shadow: 0 4px 8px var(--raisin-black);    
+        background-color: #1a171f;                    
     }
 }
